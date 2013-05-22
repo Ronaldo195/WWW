@@ -1,0 +1,24 @@
+Options +FollowSymlinks
+
+<Files .htaccess>
+deny from all
+</Files>
+<Files ~ "\.log$">
+	Order allow,deny
+	Deny from all
+</Files>
+<ifModule mod_php5.c>
+	php_value zlib.output_compression 16386
+	php_value register_globals off
+	php_value session.use_trans_sid 0
+</ifModule>
+<ifModule mod_rewrite.c>
+RewriteEngine on
+# Uncomment the line below if the site doesn't work and you have mod_rewrite installed.
+# RewriteBase /admin
+
+RewriteRule ^sito/(.*)$ ./$1.php
+RewriteRule ^utenti/(.*)$ ./$1.php
+RewriteRule ^home$ ./home.php
+RewriteRule ^stop$ ./stop.php
+</ifModule>

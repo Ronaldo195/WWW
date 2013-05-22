@@ -1,0 +1,36 @@
+ErrorDocument 404 /error.php
+ErrorDocument 403 /error.php
+Options +FollowSymlinks
+
+<Files .htaccess>
+deny from all
+</Files>
+<ifModule mod_php5.c>
+	php_value zlib.output_compression 16386
+	php_value register_globals off
+	php_value session.use_trans_sid 0
+</ifModule>
+<ifModule mod_rewrite.c>
+RewriteEngine on
+# Uncomment the line below if the site doesn't work and you have mod_rewrite installed.
+# RewriteBase /
+
+RewriteRule ^home/(.*)$ ./user_profile.php?name=$1
+RewriteRule ^groups/(.*)$ ./group_profile.php?id=$1
+RewriteRule ^discussions/(.*)$ ./group_forum.php?id=$1
+RewriteRule ^articles/archive$ ./articles.php?archive=true [QSA]
+RewriteRule ^articles/archive?pageNumber=(.*)$ ./articles.php?archive=true&pageNumber=$1
+RewriteRule ^articles/category/(.*)$ ./articles.php?category=$1
+RewriteRule ^articles/(.*)-(.*)/in/category/(.*)$ ./articles.php?id=$1&category=$3
+RewriteRule ^articles/(.*)-(.*)/in/archive$ ./articles.php?id=$1&archive=true
+RewriteRule ^articles/(.*)-(.*)$ ./articles.php?id=$1
+RewriteRule ^profile/friendsmanagement$ ./account.php
+RewriteRule ^profile$ ./account.php
+RewriteRule ^credits/club$ ./club.php
+RewriteRule ^account/logout$ ./logout.php
+RewriteRule ^account/password/resetIdentity/(.*)$ ./resetIdentity.php?token=$1
+RewriteRule ^account/password/resetConfirmation$ ./resetConfirmation.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(([A-Za-z0-9\-_]+/)*[A-Za-z0-9\-_]+)?$ $1.php
+</ifModule>

@@ -1,0 +1,11 @@
+body div#login div#content div.middle_image{
+	background: url(../Images/indexscreen.png);
+	background-position: right bottom;
+	bottom: 0px; 
+	right: 0px; 
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	border-radius: 8px;
+	
+	}

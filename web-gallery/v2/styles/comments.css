@@ -1,0 +1,43 @@
+.news-top {
+    background: url(../images/news_comments/com_top.png) no-repeat;
+	background-size: 296px;
+    width: 296px;
+	height: 7px;
+}
+
+.news-middle {
+	background: url(../images/news_comments/com_middle.png) repeat-y;
+	background-size: 296px;
+    width: 280px;
+	height: auto;
+	padding: 8px;
+}
+
+.news-bottom-dx {
+	background: url(../images/news_comments/com_bottom_dx.png) no-repeat;
+	background-size: 296px;
+    width: 296px;
+	height: 20px;
+}
+
+.news-bottom-sx{
+	background: url(../images/news_comments/com_bottom_sx.png) no-repeat;
+	background-size: 296px;
+    width: 296px;
+	height: 20px;
+}
+
+.main-sx {
+	float: left;
+	width: auto;
+	height: auto;
+}
+
+.main-dx {
+	float: right;
+	width: auto;
+	height: auto;
+}
+
+
+	

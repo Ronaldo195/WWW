@@ -1,0 +1,302 @@
+body {
+	background-image: url('../images/bg.png');
+	width: 100%;
+	font-size: 11px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+span {
+	padding: 0px 0px 0px 5px;
+	text-shadow: none;
+	font-weight: bold;
+	font-size: 10px;
+	color: #353535;
+}
+
+header {
+	background-image: url('../images/index/barre.png');
+	width: 100%;
+	line-height: 49px;
+	border-bottom: 1px solid black;
+	text-shadow: 0.1em 0.1em black;
+	color: #979797;
+}
+
+header div.gauche {
+	background-image: url('../images/index/logo.png');
+	background-repeat: no-repeat;
+	width: 111px;
+	height: 39px;
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-right: 10px;
+	border-right: 2px solid #585858;
+	float: left;
+}
+
+header div.slogan {
+	font-size: 13px;
+	display: inline;
+}
+
+header div.separation {
+	background-color: #585858;
+	width: 2px;
+	height: 39px;
+	margin-top: 5px;
+	margin-right: 10px;
+	float: right;
+}
+
+header div.cos_img {
+	background-image: url('../images/index/connectes.gif');
+	width: 15px;
+	height: 18px;
+	margin-top: 16px;
+	margin-right: 5px;
+	float: right;
+}
+
+header div.connectes {
+	padding-right: 15px;
+	font-size: 12px;
+	color: white;
+	float: right;
+}
+
+div#titre {
+	background: none;
+	width: 480px;
+	height: 25px;
+	padding-left: 25px;
+	padding-bottom: 13px;
+	text-shadow: 0px 1px 1px #888;
+	font-weight: bold;
+	font-size: 22px;
+	font-family: sans-serif;
+	color: white;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+div#boxe_erreur {
+	background-color: #E2E2E2;
+	width: 472px;
+	height: 19px;
+	padding-top: 11px;
+	padding-left: 7px;
+	border: 1px solid #3C3C3C;
+	border-bottom: 0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	-moz-box-shadow: 0 3px 1px #FFF inset;
+	-webkit-box-shadow: 0 3px 1px #FFF inset;
+	box-shadow: 0px 3px 1px #FFF inset;
+	text-shadow: 0px 1px 1px white;
+	font-weight: bold;
+	font-family: Tahoma;
+	margin: 0 auto;
+}
+
+div#boxe_erreur_bas {
+	background-image: url('../images/index/bas.png');
+	width: 479px;
+	height: 8px;
+	border: 1px solid #3C3C3C;
+	border-top: 0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+div#boxe_erreur a {
+	color: black;
+}
+
+button {
+	position: relative;
+	background-image: url('../images/index/close.png');
+	background-color: #E2E2E2;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	margin-top: -3px;
+	margin-right: 6px;
+	float: right;
+	border: none;
+}
+
+div#boxe_contour {
+	width: 480px;
+	height: 356px;
+	border: 1px solid #3C3C3C;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin: 0 auto;
+}
+
+div#boxe {
+	background-color: #E2E2E2;
+	width: 470px;
+	height: 328px;
+	padding-top: 20px;
+	padding-left: 10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	-moz-box-shadow: 0 3px 1px #FFF inset;
+	-webkit-box-shadow: 0 3px 1px #FFF inset;
+	box-shadow: 0px 3px 1px #FFF inset;
+	text-shadow: 0px 1px 1px white;
+}
+
+div#boxe_bas {
+	background-image: url('../images/index/bas.png');
+	width: 480px;
+	height: 8px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	margin: 0 auto;
+}
+
+div#boxe div.barre_gauche {
+	background-image: url('../images/index/barre_gauche.png');
+	width: 225px;
+	height: 10px;
+	margin-top: 2px;
+	float: left;
+	display: inline;
+}
+
+div#boxe div.barre_droite {
+	background-image: url('../images/index/barre_gauche.png');
+	width: 133px;
+	height: 10px;
+	margin-top: 2px;
+	margin-right: 19px;
+	float: right;
+}
+
+div#boxe div.barre_droite2 {
+	background-image: url('../images/index/barre_gauche.png');
+	width: 86px;
+	height: 10px;
+	margin-top: 2px;
+	margin-right: 19px;
+	float: right;
+}
+
+div#boxe div.img_connexion {
+	background-image: url('../images/index/connexion.gif');
+	width: 136px;
+	height: 117px;
+	margin-left: 42px;
+	float: left;
+	display: inline;
+}
+
+div#boxe div.img_inscription {
+	background-image: url('../images/index/img_inscription.png');
+	width: 153px;
+	height: 92px;
+	margin-left: 35px;
+	float: left;
+	display: inline;
+}
+
+input[type=text], input[type=password] {
+	background-color: #F0F0F0;
+	width: 156px;
+	height: 20px;
+	margin: 10px 80px 0px 0px;
+	padding-left: 4px;
+	border: 1px solid #808080;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0px 1px 1px white;
+	font-weight: bold;
+	font-size: 10px;
+	color: #B5B5B5;
+	outline: none;
+	float: right;
+}
+
+input[type=submit] {
+	background-color: #D9D9D9;
+	width: auto;
+	line-height: 20px;
+	margin: 10px 0px 25px 138px;
+	border: 1px solid #919191;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: 0 3px 1px #FFF inset;
+	-webkit-box-shadow: 0 3px 1px #FFF inset;
+	box-shadow: 0px 3px 1px #FFF inset;
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	cursor: pointer;
+}
+
+input[type=submit]:active {
+	box-shadow: none;
+}
+
+div#boxe div.inscription_titre {
+	padding-left: 230px;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Tahoma;
+	color: black;
+}
+
+div#boxe div.desc {
+	width: 210px;
+	padding-left: 230px;
+}
+
+div#boxe div.inscription {
+	background-image: url('../images/index/inscription.png');
+	width: 290px;
+	height: 33px;
+	padding-top: 7px;
+	margin: 0 auto;
+	margin-top: 5px;
+	text-shadow: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+}
+
+div#boxe div.inscription:hover {
+	background-image: url('../images/index/inscription_hover.png');
+}
+
+div#boxe  a {
+	text-decoration: none;
+}
+
+footer {
+	padding-top: 10px;
+	text-align: center;
+	color: #333;
+}
