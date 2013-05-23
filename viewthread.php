@@ -190,7 +190,7 @@ var habboReqPaths = "<?php echo PATH; ?>discussions/<?php echo $groupid; ?>";
 				}*/
 				
 				?>
-                <?php if($topic_open && $logged_in){ ?><?php echo $asdf ?><?php } elseif($logged_in) { ?><span class="topic-closed"><img src="./web-gallery/images/groups/status_closed.gif" title="Closed Thread"> Discussione chiusa</span><?php } ?>
+                <?php if($topic_open && $logged_in){ ?><?php echo $asdf ?><?php } elseif($logged_in) { ?><span class="topic-closed"><img src="<?php echo PATH; ?>web-gallery/images/groups/status_closed.gif" title="Closed Thread"> Discussione chiusa</span><?php } ?>
                 <input type="hidden" id="email-verfication-ok" value="1"/>
 				<?php
 				$groupid = 0;
@@ -248,10 +248,10 @@ while($row = mysql_fetch_assoc($get_em)){
 	<a id='post-".$row['id']."'>
 	<td class=\"post-list-row-container\">
 		&nbsp;\n";
-            if($input->IsUserOnline($userid)){ echo "<img alt=\"Online\" src=\"./web-gallery/images/myhabbo/habbo_online_anim.gif\" />"; } else { echo "<img alt=\"Offline\" src=\"./web-gallery/images/myhabbo/habbo_offline.gif\" />"; }
+            if($input->IsUserOnline($userid)){ echo "<img alt=\"Online\" src=\"".PATH."web-gallery/images/myhabbo/habbo_online_anim.gif\" />"; } else { echo "<img alt=\"Offline\" src=\"".PATH."web-gallery/images/myhabbo/habbo_offline.gif\" />"; }
 		echo "<a href=\"".PATH."home/".$userdata['username']."\" class=\"post-list-creator-link post-list-creator-info\">".$userdata['username']."</a><div class=\"post-list-posts post-list-creator-info\">Messaggi: ".$userdata['postcount']."</div>
 		<div class=\"clearfix\">
-            <div class=\"post-list-creator-avatar\"><img src=\"http://www.habbo.it/habbo-imaging/avatarimage?figure=".$userdata['look']."&size=b&direction=2&head_direction=2&gesture=sml\" alt=\"".$userdata['username']."\" /></div><div class=\"post-list-group-badge\">";
+            <div class=\"post-list-creator-avatar\"><img src=\"http://www.habbo.com/habbo-imaging/avatarimage?figure=".$userdata['look']."&size=b&direction=2&head_direction=2&gesture=sml\" alt=\"".$userdata['username']."\" /></div><div class=\"post-list-group-badge\">";
 		if($input->GetUserGroup($userid) != false){       
                 	echo "<a href=\"".PATH."groups/".$input->GetUserGroup($userid)."\"><img src='".PATH."habbo-imaging/badge.php?badge=".$input->GetUserGroupBadge($userid).".gif' /></a>";
 		}
@@ -278,7 +278,7 @@ echo "                ".$zxcv;
 	echo $input->HoloText($thread['title'],false,false,true)."</span><br />
         <span class=\"post-list-message-time\">".$row['edit_date']."</span>
         <div class=\"post-list-report-element\">";
-			if($user->row['rank'] > 5 || $user->row['id'] == $userdata['id'] && $logged_in){
+			if($user->row['rank'] > 3 || $user->row['id'] == $userdata['id'] && $logged_in){
                 		echo "<a href=\"#\" id=\"delete-post-".$row['id']."\" class=\"delete-button delete-post\"></a>";
 			}
 			/*if($user->row['id'] != $userdata['id'] && $logged_in){

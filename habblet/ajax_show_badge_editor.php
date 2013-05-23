@@ -30,7 +30,7 @@ if($valid > 0){ $groupdata = mysql_fetch_assoc($check); } else {exit; }
 var swfobj = new SWFObject("<?php echo PATH; ?>web-gallery/flash/BadgeEditor.swf", "badgeEditor", "280", "366", "8");
 swfobj.addParam("base", "<?php echo PATH; ?>web-gallery/flash/");
 swfobj.addParam("bgcolor", "#FFFFFF");
-swfobj.addVariable("post_url", "<?php echo PATH; ?>save_group_badge.php");
+swfobj.addVariable("post_url", "<?php echo PATH; ?>/habblet/save_group_badge.php");
 swfobj.addVariable("__app_key", "Meth0d.org");
 swfobj.addVariable("groupId", "<?php echo $groupid; ?>");
 swfobj.addVariable("badge_data", "<?php echo $groupdata['badge']; ?>");

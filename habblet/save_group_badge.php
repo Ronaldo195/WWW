@@ -1,6 +1,6 @@
 <?php 
-include('core.php');
-include('./includes/session.php');
+include('../core.php');
+include('../includes/session.php');
 
 $groupid = $input->FilterText($_POST['groupId']);
 $badge = $input->FilterText($_POST['code']);

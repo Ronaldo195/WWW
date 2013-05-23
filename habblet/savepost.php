@@ -140,9 +140,9 @@ while($row = mysql_fetch_assoc($get_em)){
 			if($user->row['rank'] > 5 || $user->row['id'] == $userdata['id']){
                 		echo "<a href=\"#\" id=\"delete-post-".$row['id']."\" class=\"delete-button delete-post\"></a>";
 			}
-			if($user->row['id'] !== $userdata['id']){
+			/*if($user->row['id'] !== $userdata['id']){
 				echo "        <div class=\"post-list-report-element\">\n                <a href=\"./iot/go.php?do=report&post=".$row['id']."&page=".$page."\" class=\"create-report-button\" title=\"Segnala Questo Post\" target=\"habbohelp\" onclick=\"openOrFocusHelp(this); return false\"></a>\n        </div>";
-			}
+			}*/
 echo "        </div>";
 
 		if(!empty($row['edit_date']) && !empty($row['edit_author'])){

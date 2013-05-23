@@ -537,11 +537,8 @@ document.observe("dom:loaded", initDraggableDialogs);
 
 <div id="edit-save" style="display:none;"></div>
     </div>
-<div id="footer">
-	<p class="copyright"><a href="index.php" target="_self"><font color="green">Homepage</a> <font color="black">|</font> <a href="./disclaimer.php" target="_self"><font color="black"><font color="black">Termini Di Servizio</a> | <a href="./privacy.php" target="_self"><font color="red">Privacy Policy</a></p>
-	<?php /*@@* DO NOT EDIT OR REMOVE THE LINE BELOW WHATSOEVER! *@@*/ ?>
-	<font color="black"><p>Powered by HoloCMS &copy 2008 Meth0d & Parts by Yifan, sisija and edited by <b>Donatello (DnT)</b>.<br />HABBO is a registered trademark of Sulake Corporation. All rights reserved to their respective owner(s).<br />We are not endorsed, affiliated, or sponsered by Sulake Corporation Oy.</p> </div></div>
-	<?php /*@@* DO NOT EDIT OR REMOVE THE LINE ABOVE WHATSOEVER! *@@*/ ?>
+<?php include("templates/footer.php"); ?>
+	</div>
 </div></div>
 
 </div>

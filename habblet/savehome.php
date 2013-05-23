@@ -1,15 +1,5 @@
 <?php
-/*=======================================================+ 
-|| # HoloCMS - Website and Content Management System
-|+=======================================================+ 
-|| # Copyright © 2012 DnT [Tutti i diritti riservati]
-|| # http://dnt.webnet32.com/
-|+=======================================================+ 
-|| # DnT HoloCMS v3 - Created By Donatello (DnT)
-|| # http://code.google.com/p/dnt-project/downloads/list
-|+=======================================================*/ 
-
-include('core.php');
+include('../core.php');
 
 // Split and count the data we've just recieved
 $note = explode("/", $input->FilterText($_POST['stickienotes']));

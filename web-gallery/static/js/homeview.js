@@ -505,7 +505,7 @@ function updateGroupSettings(A) {
     }, save: function (F) {
         var G = encodeURIComponent($("post-message").value); var H = Discussions.baseParams + "&message=" + G; var E = "post"; var C; if (F != null) { E = "topic"; H += "&topicName=" + F; C = habboReqPath + "habblet/savetopic.php" } else {
             var A = $("edit-type").value;
-            var D = $("current-page").value; if (A == "update") { C = habboReqPath + "updatepost.php"; H += "&postId=" + $("post-id").value } else { C = habboReqPath + "habblet/savepost.php"; D = -1 } H += "&page=" + D
+            var D = $("current-page").value; if (A == "update") { C = habboReqPath + "/habblet/updatepost.php"; H += "&postId=" + $("post-id").value } else { C = habboReqPath + "habblet/savepost.php"; D = -1 } H += "&page=" + D
         } new Ajax.Request(C, {
             method: "post", parameters: H, onComplete: function (K, J) {
                 var L = $("spam-message").value;

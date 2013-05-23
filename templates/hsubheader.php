@@ -1,13 +1,4 @@
 <?php
-/*---------------------------------------------------+
-| HoloCMS - Website and Content Management System
-+----------------------------------------------------+
-| Copyright © 2008 Meth0d
-+----------------------------------------------------+
-| HoloCMS is provided "as is" and comes without
-| warrenty of any kind.
-+---------------------------------------------------*/
-
 if(empty($pagename) && isset($searchname)){
 $pagename = $searchname;
 } elseif(empty($pagename)){
@@ -94,7 +85,7 @@ function cancelEditing(expired) {
 }
 
 function getSaveEditingActionName(){
-	return 'savehome.php';
+	return 'habblet/savehome.php';
 }
 
 function showEditErrorDialog() {

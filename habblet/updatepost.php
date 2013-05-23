@@ -1,8 +1,6 @@
 <?php
-include('core.php');
-include('./includes/session.php');
-
-if($input->HoloText($input->getContent('forum-enabled'), true) !== "1"){ header("Location: index.php"); exit; }
+include('../core.php');
+include('../includes/session.php');
 
 $postId = $input->FilterText($_POST['postId']);
 $message = $input->FilterText($_POST['message']);
@@ -141,9 +139,9 @@ while($row = mysql_fetch_assoc($get_em)){
 			if($user->row['rank'] > 5 || $user->row['id'] == $userdata['id']){
                 		echo "<a href=\"#\" id=\"delete-post-".$row['id']."\" class=\"delete-button delete-post\"></a>";
 			}
-			if($user->row['id'] !== $userdata['id']){
+			/*if($user->row['id'] !== $userdata['id']){
 				echo "        <div class=\"post-list-report-element\">\n                <a href=\"./iot/go.php?do=report&post=".$row['id']."&page=".$page."\" class=\"create-report-button\" title=\"Report this post\" target=\"habbohelp\" onclick=\"openOrFocusHelp(this); return false\"></a>\n        </div>";
-			}
+			}*/
 echo "        </div>";
 
 		if(!empty($row['edit_date']) && !empty($row['edit_author'])){
