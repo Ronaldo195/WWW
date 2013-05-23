@@ -94,7 +94,7 @@ if (isset($psize) == false || is_numeric($psize) == false || $psize < 1)
 				<td class=\"friend-remove\">
 				<div id=\"remove-friend-button-%s\" class=\"friendmanagement-small-icons friendmanagement-remove remove-friend\"></div>
 				</td>
-				</tr>", $oddeven, $f['id'], $f['username'], date('d/m/Y H:i:s',$f['last_online']), $input->nicetime(date('Y-m-d H:i:s',$f['last_online'])), $f['id']);
+				</tr>", $oddeven, $f['id'], $f['username'], is_numeric($f['last_online']) ? date('d/m/Y H:i:s',$f['last_online']) : $f['last_online'], $input->nicetime(is_numeric($f['last_online']) ? date('Y-m-d H:i:s',$f['last_online']) : $f['last_online']), $f['id']);
 						
 			}
 					

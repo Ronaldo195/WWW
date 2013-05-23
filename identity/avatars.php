@@ -126,7 +126,7 @@ body { behavior: url(/js/csshover.htc); }
                     <img src="<?php echo $user->avatarURL("self","b,3,3,sml,1,0"); ?>" width="64" height="110"/>
                     <div id="first-avatar-info">
                         <div class="first-avatar-name"><?php echo $user->row['username']; ?></div>
-                        <div class="first-avatar-lastonline">Ultimo accesso: <span title="<?php echo date('d-m-Y H:i:s', $user->row['last_online']); ?>"><?php echo $input->nicetime(date('Y-m-d H:i:s', $user->row['last_online'])); ?></span></div>
+                        <div class="first-avatar-lastonline">Ultimo accesso: <span title="<?php echo is_numeric($user->row['last_online']) ? date('d/m/Y H:i:s',$user->row['last_online']) : $user->row['last_online']; ?>"><?php echo $input->nicetime(is_numeric($user->row['last_online']) ? date('Y-m-d H:i:s',$user->row['last_online']) : $user->row['last_online']); ?></span></div>
                         <a id="first-avatar-play-link" href="<?php echo PATH; ?>me">
                             <div class="play-button-container">
                                 <div class="play-button"><div class="play-text">Gioca</div></div>
@@ -174,7 +174,7 @@ body { behavior: url(/js/csshover.htc); }
                       <div class="avatar-info">
                         <div class="avatar-info-container">
                           <div class="avatar-name">'.$row['username'].'</div>
-	            	      <div class="avatar-lastonline">Ultimo accesso: <span title="'.date('d-m-Y H:i:s',$row['last_online']).'">'.$input->nicetime(date('Y-m-d H:i:s',$row['last_online'])).'</span></div>
+	            	      <div class="avatar-lastonline">Ultimo accesso: <span title="'.(is_numeric($row['last_online']) ? date('d-m-Y H:i:s',$row['last_online']) : $row['last_online']).'">'.$input->nicetime(is_numeric($row['last_online']) ? date('Y-m-d H:i:s',$row['last_online']) : $row['last_online']).'</span></div>
                         </div>
                           <div class="avatar-select"><a href="'.PATH.'identity/UseAvatar?id='.$row['id'].'"><b>Gioca</b><i></i></a></div>
                       </div>

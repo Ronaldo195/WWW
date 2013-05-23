@@ -45,7 +45,7 @@ include('templates/header.php');
     </div>
     <div id="last-logged-in-box" class="info-box">
         <div class="label">Ultimo Accesso:</div>
-        <div class="content"><?php echo date('d-m-Y H:i:s', $user->row['last_online']); ?> </div>
+        <div class="content"><?php echo is_numeric($user->row['last_online']) ? date('d/m/Y H:i:s',$user->row['last_online']) : $user->row['last_online']; ?> </div>
     </div>
 	<div id="email-box" class="info-box">
         <div class="label">Email:</div>
